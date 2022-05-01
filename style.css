@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+header {
+  background: linear-gradient(to bottom right,#41b3a3 50%, #85dcbb);
+
+  padding: 40px 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.personal-img {
+  min-width: 350px;
+  min-height: 350px;
+  background-image: url(images/pexels-elle-hughes-1680172.jpg);
+  background-position: center;
+  background-size: cover;
+
+  color: white;
+  font-size: 48px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.personal-img > strong {
+  font-family: 'Playfair Display', serif;
+}
+
+.about-me {
+  background-color: #fff;
+  min-width: 600px;
+  height: auto;
+  padding: 20px 40px 30px 20px;
+  box-shadow: 5px 5px 3px 0px rgba(12,12,12,0.1);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.links > a {
+  font-size: 32px;
+}
+
+main {
+  padding: 40px 300px;
+  margin-bottom: 50px;
+}
+
+.project-container {
+  margin-top: 10px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.project {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.project-img {
+  min-width: 400px;
+  min-height: 400px;
+  background-color: red;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-description {
+  padding: 10px 20px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.project-header > h2, a {
+  font-size: 24px;
+}
+
+.project-header > h2{
+  font-weight: 300;
+}
+
+.project-links {
+  display: flex;
+  gap: 20px;
+}
+
+footer {
+  background-color: #41b3a3;
+  color: #fff;
+  margin: 0 200px 50px 200px;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.contact-info {
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.decorated-symbol {
+  color: #fff;
+  font-size: 32px;
+  margin-right: 2px;
+}
+
+.contact-decorated-img {
+  max-width: 700px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.decorated-links {
+  display: flex;
+  gap: 30px;
+}
+
+.decorated-links > a {
+  font-size: 40px;
+  color: #fff;
+}
+
+@media (max-width: 1080px) {
+  main {
+    padding: 40px 60px;
+  }
+  .project-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .project-img {
+    min-width: 300px;
+    min-height: 300px;
+  }
+  
+  footer {
+    margin: 0 60px 100px 60px;
+    font-size: 18px;
+  }
+
+  .contact-decorated-img {
+    max-width: 500px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 812px) {
+  header {
+    flex-direction: column;
+  }
+
+  .personal-img {
+    min-width: 300px;
+    min-height: 400px;
+  }
+
+  .about-me {
+    min-width: 280px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  footer {
+    flex-direction: column;
+    margin: 0;
+    padding: 40px 40px 0 40px;
+  }
+
+  .contact-decorated-img {
+    max-width: auto;
+    margin-top: 20px;
+  }
+
+  .contact-info {
+    margin: 0;
+  }
+}
