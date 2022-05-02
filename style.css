@@ -149,7 +149,7 @@ footer {
 }
 
 .contact-decorated-img {
-  max-width: 45%;
+  width: 35vw;
   object-fit: cover;
   margin-left: 20px;
 }
@@ -195,8 +195,7 @@ footer {
   }
 
   .contact-decorated-img {
-    max-width: 500px;
-    max-height: 300px;
+    width: 40vw;
   }
 }
 
@@ -223,15 +222,32 @@ footer {
     padding: 40px;
   }
 
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   footer {
     flex-direction: column;
     margin: 0;
     padding: 40px 40px 0 40px;
   }
 
+  .contact-info > h1 {
+    margin: auto;
+  }
+
+  .decorated-links {
+    justify-content: center;
+  }
+
   .contact-decorated-img {
-    max-width: auto;
+    width: 100vw;
     margin-top: 20px;
+    padding: 0;
+    margin: 0;
   }
 
   .contact-info {
