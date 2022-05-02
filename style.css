@@ -9,7 +9,8 @@ body {
 header {
   background: linear-gradient(to bottom right,#41b3a3 50%, #85dcbb);
 
-  padding: 40px 500px;
+  padding: 40px 25vw;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +52,7 @@ a {
 
 .about-me {
   background-color: #fff;
-  min-width: 600px;
+  width: 30vw;
   height: auto;
   padding: 20px 40px 30px 20px;
   box-shadow: 5px 5px 3px 0px rgba(12,12,12,0.1);
@@ -136,7 +137,6 @@ footer {
 }
 
 .contact-info {
-  margin-right: 100px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -165,20 +165,33 @@ footer {
 }
 
 @media (max-width: 1080px) {
-  main {
-    padding: 40px 60px;
+  header {
+    padding: 40px;
+  };
+
+  .about-me > p {
+    width: 100%;
   }
+
+  main {
+    padding: 40px 3vw;
+  }
+
   .project-container {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }
   .project-img {
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 350px;
+    min-height: 350px;
   }
   
   footer {
-    margin: 0 60px 100px 60px;
+    margin: 0 60px 0 60px;
     font-size: 18px;
+  }
+
+  .contact-info {
+    margin: 0;
   }
 
   .contact-decorated-img {
@@ -187,7 +200,7 @@ footer {
   }
 }
 
-@media (max-width: 812px) {
+@media (max-width:500px) {
   header {
     flex-direction: column;
   }
