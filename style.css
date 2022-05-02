@@ -149,8 +149,7 @@ footer {
 }
 
 .contact-decorated-img {
-  max-width: 600px;
-  max-height: 400px;
+  max-width: 45%;
   object-fit: cover;
   margin-left: 20px;
 }
